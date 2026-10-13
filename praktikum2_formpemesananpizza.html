@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Pizza</title>
+</head>
+<body>
+     <h1 align="center">Black Goose Bistro | Pizza-on-Demand</h1>
+    <p>Selamat datang di Black Goose Bistro, tempat terbaik untuk memesan pizza sesuai keinginan Anda! Silakan isi formulir di bawah ini untuk membuat pesanan pizza impian Anda.</p>
+
+    <form action="hasil_pemesanan.html">
+        <fieldset>
+            <legend><strong>Your Information</strong></legend>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name">
+        <p>
+            <label for="address">Address: </label>
+            <input type="text" id="address" name="address">
+        </p>
+
+        <p>
+            <label for="phone">Phone: </label>
+            <input type="text" id="phone" name="phone">
+        </p>
+
+        <p>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email">
+        </p>
+
+        <p>
+            <label for="Instruction">Delivery Instruction: </label><br>
+            <textarea
+            id="instruction"
+            name="instruction"
+            rows="4"
+            cols="50"
+            maxlength="400"
+            placeholder="no more than 400 characters.">
+            </textarea>
+        </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><strong>Design Your Dream Pizza</strong></legend>
+            <p>Pizza Specs</p>
+            <p>Pilih 1:</p>
+
+            <p>
+                <input type="radio" id="classic" name="crust" value="classic white" >
+                <label for="classic">Classic White</label><br>
+
+                <input type="radio" id="thin" name="crust" value="thin crust" >
+                <label for="thin">Thin Crust</label><br>
+
+                <input type="radio" id="deep" name="crust" value="deep dish" >
+                <label for="deep">Deep Dish</label><br>
+
+                <input type="radio" id="gluten" name="crust" value="gluten free" >
+                <label for="gluten">Gluten Free</label><br>
+            </p>
+
+            <p>Toppings</p>
+
+            <p>
+                <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
+                <label for="pepperoni">Pepperoni</label><br>
+
+                <input type="checkbox" id="mushroom" name="topping" value="mushroom">
+                <label for="mushroom">Mushroom</label><br>
+
+                <input type="checkbox" id="onion" name="topping" value="onion">
+                <label for="onion">Onion</label><br>
+
+                <input type="checkbox" id="sausage" name="topping" value="sausage">
+                <label for="sausage">Sausage</label><br>
+
+                <input type="checkbox" id="bacon" name="topping" value="bacon">
+                <label for="bacon">Bacon</label><br>
+
+                <input type="checkbox" id="extraCheese" name="topping" value="extra cheese">
+                <label for="extraCheese">Extra Cheese</label><br>
+
+                <input type="checkbox" id="greenPeppers" name="topping" value="green peppers">
+                <label for="greenPeppers">Green Peppers</label><br>
+            </p>
+
+            <p>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+
+    </form>
+</body>
+</html>
